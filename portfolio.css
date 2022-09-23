@@ -1,0 +1,53 @@
+body {
+    font-family : sans-serif;
+  }
+  .text-heading {
+    color : white;
+    box-align : center;
+  }
+  .header {
+    background-color : black;
+    padding : 15px;
+    text-align : center;
+  }
+  .nav_menu {
+    overflow : hidden;
+    background-color : #333;
+  }
+  .nav_menu a {
+    float : left;
+    display : block;
+    color : white;
+    text-align : center;
+    padding : 14px 16px;
+    text-decoration : none;
+  }
+  .nav_menu a:hover {
+    background-color : white;
+    color : black;
+  }
+
+ table, th{
+      border : 1px solid black;
+  }
+  
+  .footer {
+    background-color : navy;
+    padding : 15px;
+    text-align : center;
+    overflow : hidden;
+    background-color : #333;
+    clear : left;
+
+  }
+  .footer a{
+    display : inline;
+    color : white;
+    padding : 14px 16px;
+    text-decoration : none;
+    font-family : arial;
+  }
+  .footer a:hover {
+    background-color : white;
+    color : black;
+  }
