@@ -1,69 +1,66 @@
-*{
-  background: url(images\background.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100% ;
-  background-attachment: fixed;
+    body {
+      font-family : sans-serif;
+    }
+    .text-heading {
+      color : white;
+      box-align : center;
+    }
+    .header {
+      background-color : black;
+      padding : 15px;
+      text-align : center;
+    }
+    .nav_menu {
+      overflow : hidden;
+      background-color : #333;
+    }
+    .nav_menu a {
+      float : left;
+      display : block;
+      color : white;
+      text-align : center;
+      padding : 14px 16px;
+      text-decoration : none;
+    }
+    .nav_menu a:hover {
+      color : black;
+    }
+    .footer {
+      padding : 15px;
+      text-align : center;
+      overflow : hidden;
+      background-color : #333;
+      clear : left;
   
-}
-body {
-    font-family : sans-serif;
-  }
-  .text-heading {
-    color : white;
-    box-align : center;
-  }
-  .header {
-    background-color : black;
-    padding : 15px;
-    text-align : center;
-  }
-  .nav_menu {
-    overflow : hidden;
-    background-color : #333;
-  }
-  .nav_menu a {
-    float : left;
-    display : block;
-    color : white;
-    text-align : center;
-    padding : 14px 16px;
-    text-decoration : none;
-  }
-  .nav_menu a:hover {
-    background-color : white;
-    color : black;
-  }
-  .columnB {
-    float : left;
-    width : 56%;
-    padding : 10px;
-    text-align : justify;
-    background-color : white;
-  }
-  .columnA, .columnC {
-    float : left;
-    width : 20%;
-    padding : 10px;
-    text-align : justify;
-    background-color : white;
-  }
-  .footer {
-    background-color : navy;
-    padding : 15px;
-    text-align : center;
-    overflow : hidden;
-    background-color : #333;
-    clear : left;
+    }
+    .footer a{
+      display : inline;
+      color : white;
+      padding : 14px 16px;
+      text-decoration : none;
+      font-family : arial;
+    }
+    .footer a:hover {
+      background-color : white;
+      color : black;
+    }
 
-  }
-  .footer a{
-    display : inline;
-    color : white;
-    padding : 14px 16px;
-    text-decoration : none;
-    font-family : arial;
-  }
-  .footer a:hover {
-    background-color : white;
-    color : black;
-  }
+    .background{
+        background-image: url(../images/background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .content{
+        padding: 5%;
+        color: aliceblue;
+        text-align: center;
+    }
+    p{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 50;
+    }
+    h1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 70;
+    }

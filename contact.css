@@ -26,10 +26,6 @@ body {
     background-color : white;
     color : black;
   }
-
- table, th{
-      border : 1px solid black;
-  }
   
   .footer {
     background-color : navy;
@@ -57,4 +53,10 @@ body {
     background-position: center;
     background-attachment: fixed;
     height: 100hv;
-}
+    }
+    p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 2.2em;
+    font-size: larger;
+    
+    }
