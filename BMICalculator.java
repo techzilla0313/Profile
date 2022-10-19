@@ -136,7 +136,8 @@ public class BMICalculator extends JFrame
             double height = (fe * 12) + i;
             double result = (p / (height * height) * 703);
         
-            JOptionPane.showMessageDialog(f,"Your BMI is : " + result);
+            b.setText(String.valueOf(result));
+    
         
     }
     
