@@ -93,7 +93,7 @@ public class BMICalculator extends JFrame
         {
             public void actionPerformed(ActionEvent e)
             {
-                
+                computeActionPerformed(e);
             }
         });
         clear.setText("Clear");
@@ -101,14 +101,14 @@ public class BMICalculator extends JFrame
         grid.gridy = 4;
         getContentPane().add(clear,grid);
         
-        exit.addActionListener(new ActionListener()
+        clear.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent e)
             {
                 clearActionPerformed(e);
             }
         });
-        
+    
         exit.setText("Exit");
         grid.gridx = 4;
         grid.gridy = 4;
@@ -128,25 +128,33 @@ public class BMICalculator extends JFrame
     private void computeActionPerformed(ActionEvent e){
         JFrame f;
         f = new JFrame();
-        String p = po.getText();
-        String fe = po.getText();
-        String i = po.getText();
-        //int height = fe.parseInt() * 12;
-       //int result = (p.parseInt() / (fe.parseInt() * 12 + i.parseInt()));
+        
+            double p = Double.parseDouble(po.getText());
+            double fe = Double.parseDouble(ft.getText());
+            double i = Double.parseDouble(in.getText());
+        
+            double height = (fe * 12) + i;
+            double result = (p / (height * height) * 703);
+        
+            JOptionPane.showMessageDialog(f,"Your BMI is : " + result);
+        
     }
     
     private void clearActionPerformed(ActionEvent e){
         JFrame f;
         f = new JFrame();
-        dispose();
-        JOptionPane.showMessageDialog(f,"Exiting BMI Calculator");
-    
+        ft.setText("");
+        po.setText("");
+        in.setText("");
+        b.setText("");
+        
     }
     
     private void exitActionPerformed(ActionEvent e){
         JFrame f;
         f = new JFrame();
-        
+        dispose();
+        JOptionPane.showMessageDialog(f,"Exiting BMI Calculator");
     }
     
 }
