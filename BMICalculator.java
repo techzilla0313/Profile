@@ -25,7 +25,7 @@ public class BMICalculator extends JFrame
     JButton exit = new JButton();
     
     public BMICalculator(){
-        setTitle("BMI Calcuidlator");
+        setTitle("BMI Calculator");
         
         getContentPane().setLayout(new GridBagLayout());
         GridBagConstraints grid = new GridBagConstraints();
